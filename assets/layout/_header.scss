@@ -1,0 +1,18 @@
+@use "../abstracts/variables" as *;
+@use "../abstracts/mixins" as *;
+@use "../abstracts/functions" as *;
+@use "../abstracts/colors" as *;
+@use "../abstracts/typography" as *;
+header{
+    .navbar{
+        @include flex(row,space-between, center);
+        gap:2rem;
+    }
+    a{
+        text-decoration: none;
+        @include text($text-color,$primary-font,$text-size:1.25rem)
+    }
+    li{
+        list-style: none;
+    }
+}

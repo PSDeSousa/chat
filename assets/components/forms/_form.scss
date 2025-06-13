@@ -1,0 +1,46 @@
+@use '../../abstracts/variables' as *;
+@use '../../abstracts/mixins' as *;
+@use '../../abstracts/colors' as *;
+@use '../../abstracts/typography' as *;
+
+
+//formulaire
+.form{
+    position:relative;
+    width : 100%;
+    //margin :auto;
+    //border: $secondary-color 1px solid ;
+    //border-radius:4px;
+    padding:0.5rem;
+    input{
+        border-radius:4px;
+    }
+    .form-block{
+        width : 100%;
+        @include flex(column,start,start);
+        label{
+            padding-top : 0.5rem;
+        }
+    }
+    .form-row{
+        width : 100%;
+        @include flex(row,space-between,end);
+        gap : 0.5rem;
+        .form-column{
+            flex : 1 1 calc(50% - 0.5rem);
+            @include flex(column,start,start);
+            >select{
+                width : 80%;
+            }
+            >input{
+                width : 80%;
+                margin-left:0;
+                margin-right :0;
+            }
+        }
+        .form-row{
+            flex : 1 1 calc(50% - 2rem);
+        }
+        padding-top : 0.5rem;
+    }
+}

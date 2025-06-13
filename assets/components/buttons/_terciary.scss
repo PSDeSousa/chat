@@ -1,0 +1,29 @@
+@use '../../abstracts/variables' as *;
+@use '../../abstracts/mixins' as *;
+@use '../../abstracts/colors' as *;
+@use '../../abstracts/typography' as *;
+.suppr-button{
+    @include button;
+    width:2rem;
+    height:2rem;
+    border-radius : 2rem;
+    background-color : red;
+}
+.add-button{
+    @include button;
+    height:2rem;
+    border-radius : 2rem;
+    background-color : green;
+}
+.terciary-button{
+    @include button;
+    height:2rem;
+    border-radius : 2rem;
+    background-color : grey;
+}
+.quit-button{
+    @include button;
+    height:2rem;
+    border-radius : 2rem;
+    background-color : red;
+}

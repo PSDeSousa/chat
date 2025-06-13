@@ -1,0 +1,27 @@
+@use '../../abstracts/variables' as *;
+@use '../../abstracts/mixins' as *;
+@use '../../abstracts/colors' as *;
+@use '../../abstracts/typography' as *;
+
+.forward-btn{
+    transform : rotate(180deg) translatey(+18%);
+}
+.carousel{
+    //max-width: 86rem;
+    @include flex(row, space-between, center);
+    flex-wrap: nowrap;
+}
+
+/**
+**************** Mobile **************************
+**/
+/*
+@media (max-width: 1090px) {
+
+.forward-btn, .back-btn{
+    img{
+        width : 2rem;
+    }
+}
+}
+*/

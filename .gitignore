@@ -1,0 +1,13 @@
+# Fichier de configuration sensible
+library/config.php
+
+# Configuration de déploiement local (VS Code SFTP)
+.vscode/sftp.json
+
+# Autres exclusions utiles (optionnel)
+.env
+*.log
+vendor/
+node_modules/
+.DS_Store
+Thumbs.db

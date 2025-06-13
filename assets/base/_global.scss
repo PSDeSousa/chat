@@ -1,0 +1,104 @@
+@use '../abstracts/variables' as *;
+@use '../abstracts/mixins' as *;
+@use '../abstracts/colors' as *;
+@use '../abstracts/typography' as *;
+
+.container-fluid{
+    width : 100%;
+    //min-height : 100vh;
+    @include flex(column, center, center);
+    //padding : 6rem;
+}
+.hero{
+    //background-image: url("../images/background/b-0.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.container{
+    width : 80%;
+    //max-width: 86rem;
+    @include flex(column, center, center);
+    margin : auto;
+}
+.row{
+    width : 100%;
+    //@include flex(row, space-between, center);
+    margin-top : $v-gap;
+    margin-bottom : $v-gap;
+    gap : $h-gap;
+}
+.line{
+    width : 100%;
+    @include flex(row, space-between, center);
+    margin-top : $v-gap;
+    margin-bottom : $v-gap;
+    gap : $h-gap;
+}
+.grid-row{
+    width : 100%;
+    @include flex(row, space-between, inherit);
+    //gap : $h-gap;
+    height: 90vh;
+
+}
+.column{
+    @include flex(column, space-between, center);
+    //gap : $v-gap;
+    width: calc(50% -  $h-gap);
+    height: 100%;
+}
+
+.bloc{
+    @include flex(column, space-between, center);
+    gap : $v-gap;
+    width: 100%;
+
+
+}
+.content{
+    overflow: hidden; //pour masquer ce qui dépasse
+    overflow-y: scroll;    
+    max-height:  50vh;
+    width : 100%;
+
+}
+
+#listeMessages{
+    width:100%;
+}
+
+table{
+    border-collapse: collapse;
+    width : 100%;
+    thead{
+        background-color: $quartenary-color;
+        tr{
+            color:$primary-color;
+            th{
+                border:2px;
+                padding-top:1rem;
+                padding-bottom:1rem;
+
+            }
+        }
+    }
+    td{
+        background-color:$primary-color;
+        border : 2px $quartenary-color solid;
+        padding-left : 0.5rem;
+        padding-right : 0.5rem;
+    }
+}
+
+a{
+    text-decoration: none;
+}
+
+
+.red{
+    background-color: rgb(228, 148, 148);
+}
+/**
+**************** Mobile **************************
+**/
+//@media (max-width: 1090px){}

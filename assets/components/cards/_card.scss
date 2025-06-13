@@ -1,0 +1,74 @@
+@use '../../abstracts/variables' as *;
+@use '../../abstracts/mixins' as *;
+@use '../../abstracts/colors' as *;
+@use '../../abstracts/typography' as *;
+//large card
+
+.card{
+    width:40rem;
+    @include flex(row, space-between, top);
+    padding : 1rem;
+    margin:1rem;
+    border-radius:10px;
+    //background-color : $primary-color;
+    gap : 1rem;
+    border : 2px $terciary-color solid;
+    img{
+        height : 3rem;
+        object-fit: cover;
+    }
+    .red{
+        background-color: red;
+        border-radius: 1rem;
+        color: $primary-color;
+        padding : 0.5rem;
+    }
+    .green{
+        background-color: green;
+        border-radius: 1rem;
+        color: $primary-color;
+        padding : 0.5rem;
+    }
+    .column{
+        width:100%;
+        @include flex(column, space-between, start);
+        .block{
+            h3{
+                margin-top:0;
+            }
+        }
+    }
+}
+
+.personne{
+    background-color: $quartenary-color;
+}
+
+.card-user{
+    width : 40rem;
+    .column{
+        flex : 2 1 calc(70% - $h-gap);
+    }
+    .column:last-child{
+        @include flex(column, space-between, end);
+        flex : 1 1 calc(30% - $h-gap);
+    }
+}
+
+
+.right-message, .left-message{
+     width:75%;
+    padding : 1rem;
+    margin:1rem;
+    border-radius:20px;
+}
+
+.left-message{
+    margin-right : auto;
+    border : 2px $quartenary-color solid;
+}
+
+.right-message{
+    margin-left : auto;
+    border : 2px $terciary-color solid;
+}
