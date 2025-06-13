@@ -32,7 +32,7 @@ projet-zenbnb/
 
 1. Clone le dépôt :
    
-   git clone https://github.com/PSDeSousa/4-elements.git
+   git clone https://github.com/PSDeSousa/chat.git
    
 2. Ouvre le fichier `index.html` dans ton navigateur.
 
